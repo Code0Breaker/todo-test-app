@@ -36,18 +36,16 @@ const note = ref({
 const originalState = ref(note.value);
 const showConfirmDialog = ref(false);
 
-// Валидация заметки
 const isValidNote = computed(() => {
     return note.value.title.trim() !== '' && note.value.todos.length > 0;
 });
 
-// Проверка на возможность отмены и повтора
 const canUndo = computed(() => {
-    return checkCanUndo(); // Используем метод из вашего хранилища
+    return checkCanUndo();
 });
 
 const canRedo = computed(() => {
-    return checkCanRedo(); // Используем метод из вашего хранилища
+    return checkCanRedo();
 });
 
 onMounted(() => {
@@ -112,10 +110,6 @@ const redoEdit = () => {
     if (nextState) {
         note.value = nextState;
     }
-};
-
-const confirmDelete = () => {
-    showConfirmDialog.value = true;
 };
 
 const remove = () => {
