@@ -1,9 +1,8 @@
 {
     "rewrites": [
-      {
-        "source": "/notes/:id",
-        "destination": "/notes/[id]"
-      }
+        {
+            "source": "/notes/:id*",
+            "destination": "/notes/[id].vue"
+        }
     ]
-  }
-  
+}
