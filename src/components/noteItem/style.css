@@ -1,0 +1,47 @@
+div {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 16px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  div:hover {
+    transform: scale(1.02);
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  span {
+    display: block;
+    padding: 4px 0;
+    color: #555;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:last-child {
+    background-color: #dc3545;
+  }
+  
+  button:last-child:hover {
+    background-color: #c82333;
+  }
