@@ -7,7 +7,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, defineEmits } from 'vue';
 import { ITodo } from '../../types';
 
 const props = defineProps<{

@@ -10,10 +10,9 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
 import { INote } from '../../types';
 
-const props = defineProps<{
+defineProps<{
   note: INote;
 }>();
 </script>
