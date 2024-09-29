@@ -1,8 +1,1 @@
-{
-    "rewrites": [
-        {
-            "source": "/note/:id*",
-            "destination": "/note/[id].vue"
-        }
-    ]
-}
+{ "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }] }
