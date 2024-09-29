@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/notes/:id",
+        "destination": "/notes/[id]"
+      }
+    ]
+  }
+  
